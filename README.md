@@ -1,5 +1,7 @@
 # Tony Le Huynh and Johnson Wang T3A2
 
+[Github repo link](https://github.com/Roids-Fitness/RoidsFitnessDocs)
+
 ## *Roids Fitness: MERN Full Stack Application*
 
 ## Purpose
