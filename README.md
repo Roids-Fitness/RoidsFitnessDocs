@@ -1,6 +1,6 @@
 # Tony Le Huynh and Johnson Wang T3A2
 
-## Roids Fitness: MERN Full Stack Application
+## *Roids Fitness: MERN Full Stack Application*
 
 ## Purpose
 
@@ -91,6 +91,77 @@ Depending on project deadlines as well as available resources and budget, these 
 - Weekly roster functionality for gym staff/trainer accounts which will display the schedule of classes they are taking
 - A further e-commerce section for the website for the gym to display and sell their products such as supplements and equipment
 
+
+## Planning
+
+At the start of the project, a scrum was conducted for the brainstorming of ideas and businesses to work with. During this time, a Trello board was also created where ideas would be commented on and stored on a card. Once the project idea was finalized, tasks were created and allocated on the Trello board. Each team member was responsible for completing and adding any new tasks, with the other checking each other’s work once a task was moved to the “Review” stage. 
+
+Various stand up meetings were conducted via Discord and Zoom which served as check-ins for each team member's progress as well as an opportunity for questions. 
+
+The order of priorities for features of the application, as well as the coding to be completed was settled on in a scrum meeting. This order of priorities to deploy the staging version of the application as soon as possible as a minimum viable product, would allow the team to have a clear vision of what to work on and in what priority. Through this, CI/CD can be followed where features will continuously be deployed to Heroku and Netlify. This will allow for consistent automatic and manual testing of the application as well as an opportunity to gain feedback from Roids Fitness for any changes to the features. 
+
+## Dataflow Diagram
+
+Text....
+
+## Application Architecture Diagram 
+
+Text...
+
+## Wireframes
+
+__Desktop - Homepage__
+
+This is the homepage of the application
+
+
+__Mobile & Tablet - Homepage__
+
+__Desktop - Sign in__
+
+Functionality for users to sign in
+
+
+__Mobile & Tablet - Sign in__
+
+__Desktop - Create new account__
+
+Functionality to create new user account
+
+__Mobile & Tablet - Create new account__
+
+__Desktop - Account dashboard__
+
+Area of the application where after the user has signed in, they will see a list of classes that they have booked.
+
+__Mobile & Tablet - Account dashboard__
+
+__Desktop - Gym classes calendar__
+
+Calendar functionality showing the class schedule for the gym. This will be able to filter via details such as class type.
+
+__Mobile & Tablet- Gym classes calendar__
+
+__Desktop - Class details & booking__
+
+Page that will open up when user clicks on a class. It will display the details of the class as well as an option to book to attend the class. 
+
+__Mobile & Tablet - Class details & booking__
+
+__Desktop - Booking confirmation__
+
+Page that will display confirmation of the user's booking for the class. 
+
+
+__Mobile & Tablet - Booking confirmation__
+
+__Desktop - Add class form__
+
+Feature available only to admin users/gym employees where they will be able to add new classes which will be displayed on the gym class schedule calendar. 
+
+__Mobile & Tablet - Add class form__
+
+
 ## Tech Stack
 
 __Front-end:__ React.JS, HTML, CSS, JavaScript, Tailwind CSS
@@ -108,11 +179,3 @@ __Testing:__ Jest, Mocha
 __Project-management tools:__ Trello, Discord, Zoom
 
 __Utilities:__ Draw.io, Figma
-
-## Planning
-
-At the start of the project, a scrum was conducted for the brainstorming of ideas and businesses to work with. During this time, a Trello board was also created where ideas would be commented on and stored on a card. Once the project idea was finalized, tasks were created and allocated on the Trello board. Each team member was responsible for completing and adding any new tasks, with the other checking each other’s work once a task was moved to the “Review” stage. 
-
-Various stand up meetings were conducted via Discord and Zoom which served as check-ins for each team member's progress as well as an opportunity for questions. 
-
-The order of priorities for features of the application, as well as the coding to be completed was settled on in a scrum meeting. This order of priorities to deploy the staging version of the application as soon as possible as a minimum viable product, would allow the team to have a clear vision of what to work on and in what priority. Through this, CI/CD can be followed where features will continuously be deployed to Heroku and Netlify. This will allow for consistent automatic and manual testing of the application as well as an opportunity to gain feedback from Roids Fitness for any changes to the features. 
