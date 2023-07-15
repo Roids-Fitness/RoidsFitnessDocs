@@ -91,76 +91,126 @@ Depending on project deadlines as well as available resources and budget, these 
 - Weekly roster functionality for gym staff/trainer accounts which will display the schedule of classes they are taking
 - A further e-commerce section for the website for the gym to display and sell their products such as supplements and equipment
 
+## Project Management Tools
+Kanban is a project management tool used to visualise progress and encourages steady output. It is a board where tasks are listed on cards and moved along the board until it reaches the “Done” column.
 
-## Planning
+The project would follow an Agile framework where work is outputted in weekly cycles of planning, implementation, review and retrospectives. Within each week, a meeting is held with the stakeholders to discuss the project progress and the Kanban board is re-populated with new tasks that need to be completed for the week. Ideally at the end of each week, all the tasks specified for that week would be in the “Done” section.
 
-At the start of the project, a scrum was conducted for the brainstorming of ideas and businesses to work with. During this time, a Trello board was also created where ideas would be commented on and stored on a card. Once the project idea was finalized, tasks were created and allocated on the Trello board. Each team member was responsible for completing and adding any new tasks, with the other checking each other’s work once a task was moved to the “Review” stage. 
+The Kanban board would be created in Trello in the following [link](https://trello.com/invite/b/7ynXsY0G/ATTIad1612a188a0b08b5e2f737cda51edb54F40A231/trello-board). This platform would be used to delegate, provide updates and give feedback on a particular task. On top of that, daily stand up meetings were conducted via Discord and Zoom which served as check-ins for each team member's progress as well as an opportunity for questions..
 
-Various stand up meetings were conducted via Discord and Zoom which served as check-ins for each team member's progress as well as an opportunity for questions. 
+At the start of the project, a scrum was conducted for the brainstorming of ideas and businesses to work with. During this time, a Trello board was also created where ideas would be commented on and stored on a card. Once the project idea was finalized, tasks were created and allocated on the Trello board. Each team member was responsible for completing and adding any new tasks, with the other checking each other’s work once a task was moved to the “Review” stage.
 
-The order of priorities for features of the application, as well as the coding to be completed was settled on in a scrum meeting. This order of priorities to deploy the staging version of the application as soon as possible as a minimum viable product, would allow the team to have a clear vision of what to work on and in what priority. Through this, CI/CD can be followed where features will continuously be deployed to Heroku and Netlify. This will allow for consistent automatic and manual testing of the application as well as an opportunity to gain feedback from Roids Fitness for any changes to the features. 
+__Trello Board at project start:__
+![Trello Board 1](docs/Trello%20Board%20(1)%20.png)
+
+__Trello Board at project part A end:__
+![Trello Board 2](docs/Trello%20Board%20(2).png)
+
+Below is a close look at a card that has utilised quite a few functionality on Trello (highlighted with numbers):
+1. Clearly defined title of the task
+2. The assigned members to the card
+3. Label specifying the type of task in relation to the project
+4. The expected completion date for the card
+5. Brief description or information related to the task
+6. Checklist to help with completion of the task
+7. Comment section where updates and feedback are provided
+
+![Trello Card](docs/Trello%20Card.png)
 
 ## Dataflow Diagram
 
-Text....
+Below diagram shows the flow of data within the application related to user processes.
+
+![Dataflow Diagram](docs/Dataflow%20Diagram.png)
 
 ## Application Architecture Diagram 
 
-Text...
+Below diagram shows the tech stack related to this application and how they interact to serve client's browser.
+
+![Application Architecture Diagram](docs/Application%20Architecture%20Diagram.png)
+
+This diagram is a more detailed look at what data is served on each web page of the application along with navigation at the frontend.
+
+![Application Architecture Diagram1](docs/Application%20Architecture%20Diagram1.png)
 
 ## Wireframes
 
-__Desktop - Homepage__
+__Homepage__
 
-This is the homepage of the application
+This is the homepage of the application. There is an image slideshow that show various exercises and classes available in the gym.
 
+Desktop:
+![Homepage Desktop](docs/Home%20Page%20(Desktop).png)
 
-__Mobile & Tablet - Homepage__
+Mobile:
 
-__Desktop - Sign in__
+![Homepage Phone](docs/Home%20Page%20(Phone).png)
 
-Functionality for users to sign in
+__Login Page__
 
+Simple form component for users to sign in.
 
-__Mobile & Tablet - Sign in__
+Desktop:
+![Login Page Desktop](docs/Login%20Page%20(Desktop).png)
 
-__Desktop - Create new account__
+Mobile:
 
-Functionality to create new user account
+![Login Page Phone](docs/Login%20Page%20(Phone).png)
 
-__Mobile & Tablet - Create new account__
+__Register Page__
 
-__Desktop - Account dashboard__
+Simple form component for users to register a new account.
 
-Area of the application where after the user has signed in, they will see a list of classes that they have booked.
+Desktop:
+![Register Page Desktop](docs/Register%20Page%20(Desktop).png)
 
-__Mobile & Tablet - Account dashboard__
+Mobile:
 
-__Desktop - Gym classes calendar__
+![Register Page Phone](docs/Register%20Page%20(Phone).png)
 
-Calendar functionality showing the class schedule for the gym. This will be able to filter via details such as class type.
+__Calendar Page__
 
-__Mobile & Tablet- Gym classes calendar__
+Page with calendar functionality showing the class schedule for the gym. Users do not have to login to view this page except there are filter options dor "All" and "My Classes" for logged in users. Classes that are in the past, would not be able to be signed up.
 
-__Desktop - Class details & booking__
+Desktop:
+![Calendar Page Desktop](docs/Calendar%20Page%20(Desktop).png)
 
-Page that will open up when user clicks on a class. It will display the details of the class as well as an option to book to attend the class. 
+Mobile:
 
-__Mobile & Tablet - Class details & booking__
+![Calendar Page Phone](docs/Calendar%20Page%20(Phone).png)
 
-__Desktop - Booking confirmation__
+__Class Details Page__
 
-Page that will display confirmation of the user's booking for the class. 
+Page that will open up when user clicks on a class. It will display the details of the class as well as an option to book to attend the class.
 
+Desktop:
+![Class Details Page Desktop](docs/Class%20Details%20Page%20(Desktop).png)
 
-__Mobile & Tablet - Booking confirmation__
+Mobile:
 
-__Desktop - Add class form__
+![Class Details Page Phone](docs/Class%20Details%20Page%20(Phone).png)
 
-Feature available only to admin users/gym employees where they will be able to add new classes which will be displayed on the gym class schedule calendar. 
+__Confirmation Page__
 
-__Mobile & Tablet - Add class form__
+Page that will display confirmation of the user's booking for the class.
 
+Desktop:
+![Confirmation Page Desktop](docs/Confirmation%20Page%20(Desktop).png)
+
+Mobile:
+
+![Confirmation Page Phone](docs/Confirmation%20Page%20(Phone).png) 
+
+__Add Class Page__
+
+Feature available only to admin users/gym employees where they will be able to add new classes which will be displayed on the gym class schedule calendar.
+
+Desktop:
+![Add Class Page Desktop](docs/Add%20Class%20Page%20(Desktop).png)
+
+Mobile:
+
+![Add Class Page Phone](docs/Add%20Class%20Page%20(Phone).png)
 
 ## Tech Stack
 
