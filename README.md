@@ -4,6 +4,11 @@
 
 ## *Roids Fitness: MERN Full Stack Application*
 
+## Links
+- [Github Repo](https://github.com/orgs/Roids-Fitness/repositories)
+- [Frontend (Netlify)](https://roids-fitness.netlify.app/)
+- [Backend (Heroku)](https://roids-fitness-server-c1145ebc83e7.herokuapp.com/)
+
 ## Purpose
 
 The purpose of this application is to serve as a calendar scheduling and booking system for a gym and its weekly classes. 
@@ -30,31 +35,33 @@ There are a variety of reasons patrons attend these classes including for health
 The application will need to be simple and intuitive to use so that it is easily accessible for all the gym patrons. 
 
 ## User Stories
+The user stories that have been met by the project outcome are checked below.
 
-__Core MVP features:__ 
+__Core MVP features:__
 
-1. As a gym patron, I want to see a clear calendar displaying the schedule of gym classes for the next few weeks, as I want to be able to make a quick decision on which class I want to attend. 
-2. As a gym patron, I want to be able to easily book a class online so that I can attend this class. 
-3. As a gym patron, an online dashboard showing a list of the classes I’ve booked would be really handy so that I can remember what classes I intend to attend. 
-4. As a gym patron, I would like to create an account for myself and login, so that I can both book these classes as well as see a dashboard showing my details and lists of classes I’ve booked. 
-5. As a gym staff member, I need to be able to add new classes to the calendar schedule so that the classes available remain up to date for our patrons to see. 
+
+- [x] As a gym patron, I want to see a clear calendar displaying the schedule of gym classes for the next few weeks, as I want to be able to make a quick decision on which class I want to attend. 
+- [x] As a gym patron, I want to be able to easily book a class online so that I can attend this class. 
+- [x] As a gym patron, an online dashboard showing a list of the classes I’ve booked would be really handy so that I can remember what classes I intend to attend. 
+- [x] As a gym patron, I would like to create an account for myself and login, so that I can both book these classes as well as see a dashboard showing my details and lists of classes I’ve booked. 
+- [ ] As a gym staff member, I need to be able to add new classes to the calendar schedule so that the classes available remain up to date for our patrons to see. 
 
 
 __Additional features:__
 
 
-1. As a gym patron, I would like to see further details regarding the classes offered at my gym. This is so that I can make a decision on which classes I would like to attend and so that I also know if I need to bring any additional equipment (such as a yoga mat, shoes, towel etc.) to the class. 
-2. As a gym patron, I would like to be able to filter the gym class schedule by types of classes and trainers. This is so that I can see specifically which classes I want to attend. 
-3. As a gym staff member and trainer, I want to be able to see a roster of the specific classes that I’ll be taking for the week. This is so that I clearly know what classes I’ll be taking, and so that I can personally plan and prepare for these classes.
+- [x] As a gym patron, I would like to see further details regarding the classes offered at my gym. This is so that I can make a decision on which classes I would like to attend and so that I also know if I need to bring any additional equipment (such as a yoga mat, shoes, towel etc.) to the class. 
+- [ ] As a gym patron, I would like to be able to filter the gym class schedule by types of classes and trainers. This is so that I can see specifically which classes I want to attend. 
+- [ ] As a gym staff member and trainer, I want to be able to see a roster of the specific classes that I’ll be taking for the week. This is so that I clearly know what classes I’ll be taking, and so that I can personally plan and prepare for these classes.
 
 
 __After consultation with Roids Fitness__
 
 After a second consultation with Roids Fitness regarding the plan for the features and development of the application, it was requested by the business to include additional admin/manager functionality to do things such as remove employees and classes. 
 
-1. As a gym staff member, I want to also be able to edit or remove any classes from the schedule in case there are any changes such as a trainer no longer being available. 
-2. As a gym staff member, I should be able to create my own account and login so that I can add/edit/remove classes to the schedule. 
-3. As the manager and admin user, I want to be able to add and remove gym staff from the system so that the users that have access to the calendar application are up to date. 
+- [ ] As a gym staff member, I want to also be able to edit or remove any classes from the schedule in case there are any changes such as a trainer no longer being available. 
+- [ ] As a gym staff member, I should be able to create my own account and login so that I can add/edit/remove classes to the schedule. 
+- [ ] As the manager and admin user, I want to be able to add and remove gym staff from the system so that the users that have access to the calendar application are up to date. 
 
 
 __Further market research__
@@ -62,10 +69,10 @@ __Further market research__
 Upon some further market research of other applications and systems used by gym businesses, there were a few more aspects of functionality that could be added to the application. This would be dependent on project deadlines as well as budget. 
 
 
-1. As a gym patron, I would like to be able to purchase individual PT sessions for myself as opposed to just attending classes so that I can have a one-on-one experience and guidance with my training. 
-2. As a gym patron I would like to be able to update and see my details in my user account. This is so that I can keep these details up to date for my gym membership. 
-3. As a gym patron, I would like to be able to purchase the products on offer at the gym online. This is so that I’m not limited to only being able to purchase these products at the gym. 
-4. As a gym staff member, I want to be able to display and sell the gym’s products online. This is so that our patrons can see the fantastic products we have on offer such as supplements. 
+- [ ] As a gym patron, I would like to be able to purchase individual PT sessions for myself as opposed to just attending classes so that I can have a one-on-one experience and guidance with my training. 
+- [ ] As a gym patron I would like to be able to update and see my details in my user account. This is so that I can keep these details up to date for my gym membership. 
+- [ ] As a gym patron, I would like to be able to purchase the products on offer at the gym online. This is so that I’m not limited to only being able to purchase these products at the gym. 
+- [ ] As a gym staff member, I want to be able to display and sell the gym’s products online. This is so that our patrons can see the fantastic products we have on offer such as supplements. 
 
 
 ## Functionality & Features
@@ -127,6 +134,15 @@ Additional features were unlocked later on in the project.
 11. Recorded completion date when the task is completed.
 
 ![Trello Card](docs/Trello%20Card%20(2).png)
+
+As evident by the Trello cards, the task delegation for this application were as followed:
+
+- Frontend build and testing - Johnson
+- Backend build and testing - Tony
+- Integration - Both through pair programming
+- Documentation - Johnson
+
+The task delegation plays on the strengths and weaknesses of the team. Johnson is shown to have a keener eye for aesthetics when building the wireframes, making him a more suitable candidate for building the frontend. He also plans to focus on the frontend for his career plans and this provides the perfect opportunity. Tony, on the other hand, felt he was more comfortable building the backend as he grasps the concepts much better. The choice of separating the tasks as so was purposeful, as both developers have very distinctive styles when it comes to programming and felt that work can be conducted more efficient independently. During integration, pair programming was conducted giving both developer a chance to teach and learn.
 
 ## Project Management Methodology
 The Roids Fitness Application was created following the Agile Software Development Cycle.
@@ -316,3 +332,19 @@ The following libraries were used for the Roids Fitness Application. Below a bri
 23. moment-timezone: Library extending Moment.js to support working with time zones. When storing data from the backend to the database, date and time objects are converted to UTC when converted to BSON. This is used to correctly store time in AEST.
 
 24. mongoose: Object Data Modeling (ODM) library for MongoDB and Node.js. Allows the connection between express and MongoDB.
+
+## Project Outcome
+The main project outcome was that the MVP features were achieved. On the frontend, the home page, register page, login page, calendar page and the class details page were completed. On the backend, routes were completed for creating class, updating class, deleting class, retrieve user by id, updating user and deleting user in additional to the functionality of the frontend which were:
+- creating user - register page
+- user authentication - login page and logout functionality
+- getting classes - calendar page
+- updating participantList and updating savedClasses - class detail signup page
+- getting classes by id - class details page
+
+Through the user production testing phase, most of the stakeholders were satisfied with the full-stack application, given that it meets the minimal requirement for Roids Fitness' business use. Some feedback were given to improve the calendar UI for a more professional look and others say that the amount of features felt lackluster and wished for more.
+
+Due to time restraints, many of the additional features could not be completed. An additional 2 months was proposed by the development team to complete the fully fledged app with a salary expectation of at least $20,000 AUD. The 2-month project plan proposes:
+- Admin functionality to create and modify classes
+- User update details
+- Filtering options on the calendar
+- Added security through better encryption and secure cloud storage
