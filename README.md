@@ -93,10 +93,12 @@ Depending on project deadlines as well as available resources and budget, these 
 - Weekly roster functionality for gym staff/trainer accounts which will display the schedule of classes they are taking
 - A further e-commerce section for the website for the gym to display and sell their products such as supplements and equipment
 
-## Project Management Tools
+
+
+## Task Delegation Methodology
 Kanban is a project management tool used to visualise progress and encourages steady output. It is a board where tasks are listed on cards and moved along the board until it reaches the “Done” column.
 
-The project would follow an Agile framework where work is outputted in weekly cycles of planning, implementation, review and retrospectives. Within each week, a meeting is held with the stakeholders to discuss the project progress and the Kanban board is re-populated with new tasks that need to be completed for the week. Ideally at the end of each week, all the tasks specified for that week would be in the “Done” section.
+
 
 The Kanban board would be created in Trello in the following [link](https://trello.com/invite/b/7ynXsY0G/ATTIad1612a188a0b08b5e2f737cda51edb54F40A231/trello-board). This platform would be used to delegate, provide updates and give feedback on a particular task. On top of that, daily stand up meetings were conducted via Discord and Zoom which served as check-ins for each team member's progress as well as an opportunity for questions..
 
@@ -118,6 +120,31 @@ Below is a close look at a card that has utilised quite a few functionality on T
 7. Comment section where updates and feedback are provided
 
 ![Trello Card](docs/Trello%20Card.png)
+
+## Project Management Methodology
+The Roids Fitness Application was created following the Agile Software Development Cycle.
+
+![Agile Project Lifecycle](docs/Agile.png)
+
+Work is outputted in mini cycles of planning, implementation, review and retrospectives called sprints. Within each sprint, a meeting is held with the stakeholders to discuss the project progress and the Kanban board is re-populated with new tasks that need to be completed for the week. Ideally at the end of each week, all the tasks specified for that week would be in the “Done” section.
+
+The following were the sprints and their descriptions. These are identified by the Story Points in the Trello Board.
+
+1. Project planning: website description, user stories, Trello board planning and dataflow diagram.
+
+2. Project planning and design: application architecture diagram, git workflow planning and wireframes.
+
+3. Project design and implementation: frontend Bootstrap and CSS, initial frontend deployment and backend routes planning
+
+4. Project implementation: frontend registration and login page form, backend database seed file, backend models, backend JWT and backend admin functionality.
+
+5. Project implementation (integration start): register form data integration, backend deployment, fixing routes to match, local database testing and frontend login integration.
+
+6. Project implementation (integration): frontend calendar, frontend signup to class, backend code tidying
+
+7. Project implementation (final) and testing: frontend code tidy-up and backend and frontend testing
+
+8. Project maintenance and documentation: documentation, development and production testing and presentation.
 
 ## Dataflow Diagram
 
