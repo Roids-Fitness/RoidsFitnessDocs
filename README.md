@@ -93,12 +93,8 @@ Depending on project deadlines as well as available resources and budget, these 
 - Weekly roster functionality for gym staff/trainer accounts which will display the schedule of classes they are taking
 - A further e-commerce section for the website for the gym to display and sell their products such as supplements and equipment
 
-
-
 ## Task Delegation Methodology
 Kanban is a project management tool used to visualise progress and encourages steady output. It is a board where tasks are listed on cards and moved along the board until it reaches the “Done” column.
-
-
 
 The Kanban board would be created in Trello in the following [link](https://trello.com/invite/b/7ynXsY0G/ATTIad1612a188a0b08b5e2f737cda51edb54F40A231/trello-board). This platform would be used to delegate, provide updates and give feedback on a particular task. On top of that, daily stand up meetings were conducted via Discord and Zoom which served as check-ins for each team member's progress as well as an opportunity for questions..
 
@@ -110,6 +106,9 @@ __Trello Board at project start:__
 __Trello Board at project part A end:__
 ![Trello Board 2](docs/Trello%20Board%20(2).png)
 
+__Trello Board at project part B end:__
+![Trello Board 3](docs/Trello%20Board%20(3).png)
+
 Below is a close look at a card that has utilised quite a few functionality on Trello (highlighted with numbers):
 1. Clearly defined title of the task
 2. The assigned members to the card
@@ -120,6 +119,14 @@ Below is a close look at a card that has utilised quite a few functionality on T
 7. Comment section where updates and feedback are provided
 
 ![Trello Card](docs/Trello%20Card.png)
+
+Additional features were unlocked later on in the project.
+8. Github Power-ups that allow pull request, commits and branches to be attached to cards.
+9. Additional labels to show the difficulty of the task.
+10. Story points which are the number of the sprint.
+11. Recorded completion date when the task is completed.
+
+![Trello Card](docs/Trello%20Card%20(2).png)
 
 ## Project Management Methodology
 The Roids Fitness Application was created following the Agile Software Development Cycle.
