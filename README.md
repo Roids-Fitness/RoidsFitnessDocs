@@ -231,3 +231,54 @@ __Testing:__ Jest, Mocha
 __Project-management tools:__ Trello, Discord, Zoom
 
 __Utilities:__ Draw.io, Figma
+
+## Libraries
+The following libraries were used for the Roids Fitness Application. Below a brief description is given, followed by its use in the application.
+
+1. @daypilot/daypilot-lite-react: A lightweight event calendar and scheduling solution in the form of React components. Used to generate the timetable/calendar component for the application.
+
+2. @testing-library/jest-dom: Custom matchers for Jest to extend DOM-related testing capabilities that simplifies testing React components' output. Used for testing.
+
+3. @testing-library/react: Utility library for testing React components from a user's perspective. Used for testing in the frontend.
+
+4. @testing-library/user-event: Utility library for simulating user interactions with React components during testing. Used for testing in the frontend.
+
+5. axios: HTTP client library for making API requests in JavaScript. Allows the frontend to exchange data from the backend.
+
+6. bootstrap: CSS framework with pre-built components for responsive web interfaces. Used to "pretty-up" the UI.
+
+7. dotenv: Loads environment variables from a .env file into Node.js applications. Used to store database connection URL and JWT secret key.
+
+8. enzyme: React testing utility with capabilities for rendering and manipulating components. Used for testing in the frontend.
+
+9. enzyme-to-json: Serializer for Enzyme wrappers to enable snapshot testing of React components. Used for testing in the frontend.
+
+10. helmet: Express.js middleware for securing web applications by setting HTTP headers. Used for security in the backend.
+
+11. react: JavaScript library for building user interfaces and single-page applications. 
+
+12. react-bootstrap: React components implementing the Bootstrap CSS framework. Used to create components in frontend with existing styling built-in.
+
+13. react-dom: Provides DOM-specific methods for rendering React components. Used for rendering frontend.
+
+14. react-helmet: React component for dynamically setting document head metadata. Used to generate window titles for the frontend.
+
+15. react-router-dom: Library for client-side routing and navigation in React applications. Used to allow frontend navigation between pages.
+
+16. react-scripts: Configuration and scripts for bootstrapping and running React applications. Used to generate terminal commands for running the application.
+
+17. react-svg: React component library for using SVG images in JSX code. Used for adding the logo.svg to the application.
+
+18. web-vitals: Library for measuring essential web performance metrics.
+
+19. bcrypt: Library for hashing and salting passwords in Node.js. Used to encrypt user passwords in the backend.
+
+20. cors: Express.js middleware for enabling Cross-Origin Resource Sharing.
+
+21. express: Web application framework for Node.js.
+
+22. jsonwebtoken: Library for generating and verifying JSON Web Tokens (JWTs). Used to generate user tokens when users login.
+
+23. moment-timezone: Library extending Moment.js to support working with time zones. When storing data from the backend to the database, date and time objects are converted to UTC when converted to BSON. This is used to correctly store time in AEST.
+
+24. mongoose: Object Data Modeling (ODM) library for MongoDB and Node.js. Allows the connection between express and MongoDB.
