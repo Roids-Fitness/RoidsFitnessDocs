@@ -1,6 +1,4 @@
-# Tony Le Huynh and Johnson Wang T3A2
-
-[Github repo link](https://github.com/Roids-Fitness/RoidsFitnessDocs)
+# Tony Le Huynh and Johnson Wang
 
 ## *Roids Fitness: MERN Full Stack Application*
 
@@ -18,6 +16,17 @@ This application will allow gym patrons to view the weekly scheduled classes at 
 It has been discussed with local gym business Roids Fitness to help transition their gym weekly classes system from paper to online. Developers working on this project are Johnson Wang and Tony Le Huynh. Before working with us, Roids Fitness only displayed their weekly classes on a whiteboard and sheets of paper at the gym. Gym patrons could only view the classes that were held by having to physically go to the gym to check, and could only book at the front office. By building this application, this will benefit both the gym patrons by making their customer experience much better as well as reducing workload for the staff as patrons can easily book classes online rather than having to see a staff member in person. 
 
 Gym patrons will have their own user accounts where they can view the online gym class schedule, make bookings, as well as see a list of the classes they’ve booked for on their own dashboard. Gym staff and trainers will also have their own accounts where they can add classes as well as see a schedule of the specific classes that they’ll be hosting for the next week or fortnight. 
+
+## Installation instructions
+
+Ensure to run ```npm install``` to install all dependencies for both front-end and back-end
+
+**Front-end**
+1. In terminal after cloning repository, run ```npm run start``` to create application in development mode.
+
+**Backend-end**
+1. In terminal after cloning repository, run ```npm run dev``` to create server in development mode
+2. Also run ```npm run wipe-and-seed``` to wipe then seed the local MongoDB database with data for development
 
 ## Target Audience
 
