@@ -6,7 +6,7 @@
 
 ## Links
 - [Github Repo](https://github.com/orgs/Roids-Fitness/repositories)
-- [Frontend (Netlify)](https://roids-fitness.netlify.app/)
+- [Frontend (Vercel)](https://roids-fitness.vercel.app/)
 - [Backend (Heroku)](https://roids-fitness-server-c1145ebc83e7.herokuapp.com/)
 
 ## Purpose
@@ -180,6 +180,8 @@ Below diagram shows the flow of data within the application related to user proc
 Below diagram shows the tech stack related to this application and how they interact to serve client's browser.
 
 ![Application Architecture Diagram](docs/Application%20Architecture%20Diagram.png)
+
+*Note that the final frontend deployment was on Vercel instead of Netlify due to technical issues.
 
 This diagram is a more detailed look at what data is served on each web page of the application along with navigation at the frontend.
 
