@@ -265,21 +265,19 @@ Mobile:
 
 ## Tech Stack
 
-__Front-end:__ React.JS, HTML, CSS, JavaScript, Tailwind CSS
+__Front-end:__ React.JS, HTML, CSS, JavaScript, Bootstrap
 
 __Back-end:__ Node.js, Express.js
 
-__Database:__ MongoDB, Mongoose
+__Database:__ MongoDB, Mongo Atlas, Mongoose
 
-__3rd Party APIs:__ Cal.com
+__Deployment:__ Netlify / Vercel (Front-end), Heroku (Back-end)
 
-__Deployment:__ Netlify (Front-end), Heroku (Back-end)
+__Testing:__ Jest
 
-__Testing:__ Jest, Mocha
+__Project-management tools:__ Trello, Discord, Zoom, In-person pair-programming + meetings
 
-__Project-management tools:__ Trello, Discord, Zoom
-
-__Utilities:__ Draw.io, Figma
+__Utilities:__ Draw.io, Figma, Google docs
 
 ## Libraries
 The following libraries were used for the Roids Fitness Application. Below a brief description is given, followed by its use in the application.
@@ -294,9 +292,9 @@ The following libraries were used for the Roids Fitness Application. Below a bri
 
 5. axios: HTTP client library for making API requests in JavaScript. Allows the frontend to exchange data from the backend.
 
-6. bootstrap: CSS framework with pre-built components for responsive web interfaces. Used to "pretty-up" the UI.
+6. bootstrap: Comprehensive CSS framework with pre-built components for responsive web interfaces. Used to "pretty-up" the UI. Pre-designed components include things such as navigation bars, modals, and alerts, reducing the time spent on styling and ensuring consistency across the application. 
 
-7. dotenv: Loads environment variables from a .env file into Node.js applications. Used to store database connection URL and JWT secret key.
+7. dotenv: Loads environment variables from a .env file into Node.js applications. Used to store database connection URL and JWT secret key. Also manages environment-specific configuration to keep sensitive data secure
 
 8. enzyme: React testing utility with capabilities for rendering and manipulating components. Used for testing in the frontend.
 
@@ -304,7 +302,7 @@ The following libraries were used for the Roids Fitness Application. Below a bri
 
 10. helmet: Express.js middleware for securing web applications by setting HTTP headers. Used for security in the backend.
 
-11. react: JavaScript library for building user interfaces and single-page applications. 
+11. react: JavaScript library for building user interfaces and single-page applications. React has a component-based architecture, which enables developers to create reusable and self-contained UI components. By using a virtual DOM (Document Object Model), React ensures efficient and optimised rendering of these components. Within the Roids Fitness Application, React forms the foundation of the frontend, allowing for a dynamic and responsive user experience.
 
 12. react-bootstrap: React components implementing the Bootstrap CSS framework. Used to create components in frontend with existing styling built-in.
 
@@ -324,29 +322,53 @@ The following libraries were used for the Roids Fitness Application. Below a bri
 
 20. cors: Express.js middleware for enabling Cross-Origin Resource Sharing.
 
-21. express: Web application framework for Node.js.
+21. express: Web application framework for Node.js. Allows developers to easily integrate various middlewares based on the application's needs. These middlewares offer a wide range of functionalities which include parsing incoming request bodies to handling routes and managing authentication. Within the Roids Fitness Application's backend, Express handles routing, data processing, and communication with the databases, serving as the backbone for server-side operations.
 
 22. jsonwebtoken: Library for generating and verifying JSON Web Tokens (JWTs). Used to generate user tokens when users login.
 
-23. moment-timezone: Library extending Moment.js to support working with time zones. When storing data from the backend to the database, date and time objects are converted to UTC when converted to BSON. This is used to correctly store time in AEST.
+23. moment-timezone: Library extending Moment.js to support working with time zones. Provides robust timezone handling in JavaScript, ensuring consistent date-time representation across various time zones. When storing data from the backend to the database, date and time objects are converted to UTC when converted to BSON. This is used to correctly store time in AEST.
 
 24. mongoose: Object Data Modeling (ODM) library for MongoDB and Node.js. Allows the connection between express and MongoDB.
 
 ## User Testing
-Manual (user) testing was conducted through an evaluation form regarding the production and development aspect of the application. A total of 4 users completed the form, with the result show [here](https://docs.google.com/document/d/18ZbZ0F2ufvr-sh_u9Xq0s8Zapyr7ALS0006KmKZKaX0/edit).
+Extensive Manual (user) testing was conducted through an evaluation form regarding the production and development aspect of the application. A total of 4 users completed the form, with the result show [here](https://docs.google.com/document/d/18ZbZ0F2ufvr-sh_u9Xq0s8Zapyr7ALS0006KmKZKaX0/edit).
+
+
+Points of feedback were provided on this form for the application (feedback received by both testing completed by developers & the client Roids Fitness). Throughout development, consistent communication was maintained between developers and the client via Zoom & In-Person meetings. This allowed for the client to be kept up to date with the project timeline and outcome as well as the developers to implement any feedback provided by the client within the time constraints of the project. Any feedback that was unable to be implemented due to project, budget and time limitations were clearly discussed with the client via Zoom/In-person meetings. Priority of the development phase was to deliver the client with a functional application satisfying core MVP features. 
+
+**Backend Server Testing**
+
+Extensive testing of all backend webserver routes were completed via Postman. Each route was manually tested for input validation, graceful error handling and for valid server responses.
+
+There were some API routes that weren't utilised by the front-end due to time constraints. However these routes were kept in the backend for future application scalability and further development. 
+
+Listed below are all API endpoints for the application:
+
+![API routes](docs/API_Routes.png)
+
+A spreadsheet was created to track the testing of all API routes. Manual testing of each route was done by both developers and the results are shown [here](https://docs.google.com/spreadsheets/d/1OKOc6_ROvpB-TmJC04GvhUnCWOLzc5rxdsKKd8YpHoU/edit?usp=sharing).
+
+Each route was tested to ensure that it would response as intended when provided with valid inputs. If the route required a JWT token, then this was also tested to ensure that the request would not be successful without a valid JWT. If the route required the JWT to be from an admin user, this was also tested to ensure this was the case for proper user admin authentication. Successful user registration and login was tested as well as JWT generation for authentication. Any feedback during the testing of the routes was discussed over Zoom/In-person/or noted on a Trello card. Correction to application code was done accordingly to ensure errors and inputs were successfully handled. 
+
+Invalid inputs were also tested and it was ensured that the appropriate error status codes and responses were handled to ensure graceful error handling and server response. Invalid inputs included wrong passwords, wrong formats, missing fields (i.e. email or password) , wrong date formats etc. If data was to be provided by the server to the front-end, this was tested to ensure this was done successfully for both local MongoDb as well as cloud Mongo Atlas (i.e. all classes were provided correctly by the server so that these would be displayed correctly on the class timetable page).
 
 
 ## Project Outcome
-The main project outcome was that the MVP features were achieved. On the frontend, the home page, register page, login page, calendar page and the class details page were completed. On the backend, routes were completed for creating class, updating class, deleting class, retrieve user by id, updating user and deleting user in additional to the functionality of the frontend which were:
+The main project outcome was that the MVP features were achieved. Within the project's time contraints, the user stories for the core MVP features were all satisfied - with users being able to register for an account and log in. Users are also able to view the weekly classes timetable along with being able to sign up for these classes. 
+
+On the frontend, the home page, register page, login page, calendar page and the class details page were completed. On the backend, routes were completed for creating class, updating class, deleting class, retrieve user by id, updating user and deleting user in additional to the functionality of the frontend which were:
 - creating user - register page
 - user authentication - login page and logout functionality
 - getting classes - calendar page
 - updating participantList and updating savedClasses - class detail signup page
 - getting classes by id - class details page
 
-Through the user production testing phase, most of the stakeholders were satisfied with the full-stack application, given that it meets the minimal requirement for Roids Fitness' business use. Some feedback were given to improve the calendar UI for a more professional look and others say that the amount of features felt lackluster and wished for more.
+Through the user production testing phase, most of the stakeholders were satisfied with the full-stack application, given that it meets the minimal requirement for Roids Fitness' business use. User-interface was also kept minimal to allow for a simple and intuitive user experience, as requested by Roids Fitness. 
 
-Due to time restraints, many of the additional features could not be completed. An additional 2 months was proposed by the development team to complete the fully fledged app with a salary expectation of at least $20,000 AUD. The 2-month project plan proposes:
+
+Some feedback were given to improve the calendar UI for a more professional look and others say that the amount of features felt lackluster and wished for more.
+
+Due to time restraints, many of the additional features could not be completed. An additional 2 months was proposed by the development team to complete the fully fledged app with financial compensation to be discussed with Roids Fitness. The 2-month project plan proposes:
 - Admin functionality to create and modify classes
 - User update details
 - Filtering options on the calendar
