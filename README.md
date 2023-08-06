@@ -39,16 +39,13 @@ The user stories that have been met by the project outcome are checked below.
 
 __Core MVP features:__
 
-
 - [x] As a gym patron, I want to see a clear calendar displaying the schedule of gym classes for the next few weeks, as I want to be able to make a quick decision on which class I want to attend. 
 - [x] As a gym patron, I want to be able to easily book a class online so that I can attend this class. 
 - [x] As a gym patron, an online dashboard showing a list of the classes I’ve booked would be really handy so that I can remember what classes I intend to attend. 
 - [x] As a gym patron, I would like to create an account for myself and login, so that I can both book these classes as well as see a dashboard showing my details and lists of classes I’ve booked. 
-- [ ] As a gym staff member, I need to be able to add new classes to the calendar schedule so that the classes available remain up to date for our patrons to see. 
-
+- [ ] As a gym staff member, I need to be able to add new classes to the calendar schedule so that the classes available remain up to date for our patrons to see.
 
 __Additional features:__
-
 
 - [x] As a gym patron, I would like to see further details regarding the classes offered at my gym. This is so that I can make a decision on which classes I would like to attend and so that I also know if I need to bring any additional equipment (such as a yoga mat, shoes, towel etc.) to the class. 
 - [ ] As a gym patron, I would like to be able to filter the gym class schedule by types of classes and trainers. This is so that I can see specifically which classes I want to attend. 
@@ -334,6 +331,10 @@ The following libraries were used for the Roids Fitness Application. Below a bri
 23. moment-timezone: Library extending Moment.js to support working with time zones. When storing data from the backend to the database, date and time objects are converted to UTC when converted to BSON. This is used to correctly store time in AEST.
 
 24. mongoose: Object Data Modeling (ODM) library for MongoDB and Node.js. Allows the connection between express and MongoDB.
+
+## User Testing
+Manual (user) testing was conducted through an evaluation form regarding the production and development aspect of the application. A total of 4 users completed the form, with the result show [here](https://docs.google.com/document/d/18ZbZ0F2ufvr-sh_u9Xq0s8Zapyr7ALS0006KmKZKaX0/edit).
+
 
 ## Project Outcome
 The main project outcome was that the MVP features were achieved. On the frontend, the home page, register page, login page, calendar page and the class details page were completed. On the backend, routes were completed for creating class, updating class, deleting class, retrieve user by id, updating user and deleting user in additional to the functionality of the frontend which were:
